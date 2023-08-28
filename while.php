@@ -7,7 +7,16 @@
 </head>
 <body>
     <?php
-        
+        $itens = ['sofa', 'cadeira', 'livro',  'mesa'];
+
+        echo '<pre>';
+        print_r($itens);
+        echo '</pre>';
+
+
+        foreach($itens as $item){
+            echo "$item <br>";
+        }
     ?>
 </body>
 </html>
