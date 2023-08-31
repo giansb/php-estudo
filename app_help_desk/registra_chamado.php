@@ -1,5 +1,5 @@
 <?php
- 
+    session_start();
 
     $arquivo = fopen('arquivo.txt','a');
 
@@ -7,7 +7,7 @@
     $categoria = str_replace('#','-',$_POST['categoria']);
     $descricao = str_replace('#','-',$_POST['descricao']);
 
-    $texto = $titulo . '#' . $categoria. '#' . $descricao . PHP_EOL;
+    $texto = $_SESSION['id'] . '#' . $titulo . '#' . $categoria. '#' . $descricao . PHP_EOL;
 
     fwrite($arquivo, $texto);
     fclose($arquivo);

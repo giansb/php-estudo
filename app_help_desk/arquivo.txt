@@ -1,3 +1,2 @@
-problema de hd#Hardware#computador não liga, preciso recuperar a mídia do hd dele
-problema de hd#Hardware#computador não liga, preciso recuperar a mídia do hd dele
-problema de hd#Hardware#computador não liga, preciso recuperar a mídia do hd dele
+#TESTE#Impressora#abc
+1#as#Impressora#asdasd
