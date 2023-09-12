@@ -4,7 +4,7 @@
 
 <?php
 $chamados = array();
-  $arquivo = fopen('arquivo.txt','r');
+  $arquivo = fopen('../../help_app_desk/arquivo.txt','r');
   while(!feof($arquivo)){
     $registro = fgets($arquivo);
     $chamados[] = $registro;
@@ -12,7 +12,7 @@ $chamados = array();
 
   fclose($arquivo);
 
-  print_r($chamados);
+ 
 
 
 ?>
@@ -68,6 +68,10 @@ $chamados = array();
                   if(count($chamado_dados) < 3){
                     continue;
                   };
+
+                  if($_SESSION['id'] != $chamado[0] && $_SESSION['perfil_id'] != 1){
+                    continue;
+                  }
                 
                 ?>
                 <div class="card mb-3 bg-light">

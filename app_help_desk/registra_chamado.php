@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $arquivo = fopen('arquivo.txt','a');
+    $arquivo = fopen('../../help_app_desk/arquivo.txt','a');
 
     $titulo = str_replace('#','-',$_POST['titulo']);
     $categoria = str_replace('#','-',$_POST['categoria']);
